@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.accloud.murata_android"
+          android:versionCode="14"
+          android:versionName="1.1.4">
+    <uses-sdk android:minSdkVersion="11"
+              android:targetSdkVersion="17"/>
+    <application android:name=".application.MainApplication"
+                 android:label="@string/app_name"
+                 android:icon="@drawable/ic_launcher" android:theme="@android:style/Theme.Light.NoTitleBar">
+        <activity android:name=".activity.login.LoginActivity"
+                  android:launchMode="singleTask" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.device.MainActivity" android:screenOrientation="portrait"
+                  android:launchMode="singleTask"/>
+        <activity android:name=".activity.device.LightActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.device.MotoActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.device.SensorActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.device.SensorHistoryActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.login.PhoneActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.login.VCodeActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.login.PasswordActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.zxing.CaptureActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.zxing.ShareActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.add.AddDeviceActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.add.DeviceReadyActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.add.ResetWifiActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.personal.AboutActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.personal.PersonalActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.personal.ChangePwdActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.personal.DeviceManagerActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.personal.AuthorizedMemberActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.personal.MyDeviceActivity" android:screenOrientation="portrait"/>
+
+        <!--友盟自动升级-->
+        <service
+                android:name="com.umeng.update.net.DownloadingService"
+                android:process=":DownloadingService">
+        </service>
+        <activity
+                android:name="com.umeng.update.UpdateDialogActivity"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar">
+        </activity>
+
+        <!-- 友盟统计 -->
+        <meta-data android:value="55485b1e67e58e52a100037f" android:name="UMENG_APPKEY"/>
+        <meta-data android:value="test" android:name="UMENG_CHANNEL"/>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <!-- 使用照相机权限 -->
+    <uses-feature android:name="android.hardware.camera"/>
+    <!-- 自动聚焦权限 -->
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+
+</manifest>

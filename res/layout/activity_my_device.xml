@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg">
+    <TextView android:id="@+id/my_device_name"
+              android:layout_width="fill_parent"
+              android:layout_height="48dp"
+              android:gravity="center_vertical"
+              android:paddingLeft="16dp"
+              android:layout_marginTop="16dp" android:text="@string/main_title"
+              android:textSize="17sp" android:background="@drawable/selectors_bg_white"
+              android:textColor="@color/phone_text"/>
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/white">
+        <TextView android:id="@+id/my_device_share_member"
+                  android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:gravity="center_vertical"
+                  android:paddingLeft="16dp" android:text="@string/my_device_share_member"
+                  android:textSize="17sp" android:background="@drawable/selectors_bg_white"
+                  android:textColor="@color/phone_text"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                   android:layout_alignParentRight="true"
+                   android:layout_centerVertical="true"
+                   android:layout_marginRight="16dp"
+                   android:src="@drawable/add_nav"/>
+    </RelativeLayout>
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white">
+        <TextView android:id="@+id/my_device_share_device"
+                  android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:gravity="center_vertical"
+                  android:paddingLeft="16dp" android:text="@string/my_device_share"
+                  android:textSize="17sp" android:background="@drawable/selectors_bg_white"
+                  android:textColor="@color/phone_text"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                   android:layout_alignParentRight="true"
+                   android:layout_centerVertical="true"
+                   android:layout_marginRight="16dp"
+                   android:src="@drawable/add_nav"/>
+    </RelativeLayout>
+
+
+    <Button android:id="@+id/my_device_choose"
+            style="@style/login_btn_style"
+            android:text="@string/my_device_choose"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"/>
+
+    <Button android:id="@+id/my_device_unbind"
+            style="@style/login_btn_style"
+            android:text="@string/unbind"
+            android:layout_margin="16dp"/>
+</LinearLayout>

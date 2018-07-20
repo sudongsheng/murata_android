@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="horizontal"
+                android:id="@+id/adapter_main_list_device"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:background="@drawable/selectors_bg_white">
+    <ImageView android:id="@+id/adapter_main_icon"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerVertical="true"/>
+    <TextView
+            android:id="@+id/adapter_main_deviceName"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/adapter_main_icon"
+            android:text="三色灯"
+            android:textSize="17sp"
+            android:textColor="@color/black"/>
+    <TextView style="@style/login_line_style"
+              android:layout_alignLeft="@id/adapter_main_deviceName"
+              android:layout_alignParentBottom="true"/>
+    <TextView android:id="@+id/adapter_main_icon_nav"
+              android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:textSize="12sp" android:textColor="@color/login_text"
+              android:layout_centerVertical="true" android:drawableRight="@drawable/add_nav"
+              android:layout_alignParentRight="true" android:drawablePadding="20dp"
+              android:gravity="center_vertical"/>
+    <ToggleButton
+            android:id="@+id/adapter_main_toggle_button"
+            android:layout_width="38dp"
+            android:layout_height="20dp"
+            android:background="@drawable/selectors_toggle"
+            android:layout_centerVertical="true"
+            android:checked="false"
+            android:textOff=""
+            android:textOn=""
+            android:layout_alignParentRight="true"/>
+</RelativeLayout>

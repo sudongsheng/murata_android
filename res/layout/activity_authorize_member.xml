@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:paddingLeft="16dp"
+              android:paddingRight="16dp"
+              android:background="@color/white">
+    <TextView android:id="@+id/member_owner_text"
+              android:layout_width="fill_parent"
+              android:layout_height="48dp"
+              android:textColor="@color/phone_text"
+              android:textSize="14sp"
+              android:gravity="center_vertical"
+              android:text="@string/owner"/>
+    <RelativeLayout android:id="@+id/member_owner_rl"
+                    android:layout_width="fill_parent"
+                    android:layout_height="56dp"
+                    android:visibility="invisible">
+        <ImageView
+                android:id="@+id/member_owner_Img"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:src="@drawable/member_icon"/>
+        <TextView android:id="@+id/member_owner_name"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_toRightOf="@id/member_owner_Img"
+                  android:layout_marginLeft="16dp"
+                  android:layout_centerVertical="true"
+                  android:textColor="@color/phone_text"
+                  android:textSize="16sp"/>
+        <TextView android:id="@+id/member_owner_unbind"
+                  android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:textColor="@color/theme" android:text="@string/unbind" android:textSize="16sp"
+                  android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <TextView style="@style/login_line_style"
+                  android:layout_alignParentBottom="true"
+                  android:layout_alignLeft="@id/member_owner_name"/>
+    </RelativeLayout>
+    <TextView android:id="@+id/member_people_text"
+              android:layout_width="wrap_content"
+              android:layout_height="48dp"
+              android:gravity="center_vertical"
+              android:textColor="@color/phone_text"
+              android:textSize="14sp"
+              android:text="@string/authorized_member_authorized_text"/>
+    <ListView
+            android:id="@+id/member_people_list"
+            android:divider="@color/transparent"
+            android:listSelector="@color/transparent"
+            android:dividerHeight="0dp"
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+</LinearLayout>
+

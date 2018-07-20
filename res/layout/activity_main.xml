@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:background="@color/white">
+    <LinearLayout android:id="@+id/main_logo_ll"
+                  android:layout_width="fill_parent"
+                  android:layout_height="156dp"
+                  android:orientation="horizontal"
+                  android:gravity="center"
+                  android:background="@color/main_logo_bg">
+        <ImageView android:id="@+id/img_main_ablecloud_logo"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/ablecloud_logo"/>
+        <ImageView android:id="@+id/img_main_cuntian_logo"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="80dp"
+                   android:src="@drawable/cuntian_logo"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/main_sensor_ll"
+                  android:layout_width="fill_parent"
+                  android:layout_height="64dp"
+                  android:orientation="horizontal"
+                  android:layout_below="@id/main_logo_ll"
+                  android:background="@color/main_icon_bg">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+                      android:orientation="horizontal" android:layout_weight="1"
+                      android:gravity="center">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:src="@drawable/icon_temperature"/>
+            <TextView android:id="@+id/main_temperature"
+                      android:layout_width="wrap_content"
+                      android:layout_height="fill_parent"
+                      android:gravity="center_vertical"
+                      android:textColor="@color/login_text"
+                      android:text="0 °C"
+                      android:textSize="18sp"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+                      android:orientation="horizontal" android:layout_weight="1"
+                      android:gravity="center">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:src="@drawable/icon_humidity"/>
+            <TextView android:id="@+id/main_humidity"
+                      android:layout_width="wrap_content"
+                      android:layout_height="fill_parent"
+                      android:gravity="center_vertical"
+                      android:textColor="@color/login_text"
+                      android:text="0 %"
+                      android:textSize="18sp"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+                      android:orientation="horizontal" android:layout_weight="1"
+                      android:gravity="center">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:src="@drawable/icon_light"/>
+            <TextView android:id="@+id/main_lightsensor"
+                      android:layout_width="wrap_content"
+                      android:layout_height="fill_parent"
+                      android:gravity="center_vertical"
+                      android:textColor="@color/login_text"
+                      android:text="0 lx"
+                      android:textSize="18sp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ListView
+            android:id="@+id/device_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/main_sensor_ll"
+            android:dividerHeight="0dp"
+            android:divider="@color/transparent"/>
+    <ImageView
+            android:id="@+id/no_device"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/main_sensor_ll"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/icon_add_big"/>
+</RelativeLayout>

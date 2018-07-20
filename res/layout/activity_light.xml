@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp" android:id="@+id/light_touch_rr">
+        <ImageView android:id="@+id/light_color_selector_bg"
+                   android:layout_width="wrap_content" android:layout_height="wrap_content"
+                   android:src="@drawable/light_color_selector_bg" android:layout_centerHorizontal="true"
+                   android:background="@color/theme"/>
+        <ImageView android:id="@+id/light_icon"
+                   android:layout_width="wrap_content" android:layout_height="wrap_content"
+                   android:layout_centerHorizontal="true" android:layout_marginTop="1dp"
+                   android:src="@drawable/light_icon" android:layout_below="@id/light_color_selector_bg"/>
+        <com.accloud.murata_android.view.ColorPickerView
+                android:id="@+id/light_picker"
+                android:layout_width="220dp"
+                android:layout_height="220dp"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/light_icon"/>
+    </RelativeLayout>
+
+    <ToggleButton
+            android:id="@+id/light_toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/selectors_moto_toggle"
+            android:layout_centerHorizontal="true"
+            android:checked="false"
+            android:textOff=""
+            android:textOn=""/>
+
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+                  android:layout_above="@id/light_toggle" android:orientation="horizontal">
+        <TextView android:layout_width="64dp" android:layout_height="wrap_content"
+                  android:text="@string/light_bright" android:textColor="@color/phone_text"
+                  android:textSize="16sp" android:gravity="center_horizontal" android:layout_gravity="center_vertical"/>
+        <SeekBar android:id="@+id/light_seekbar"
+                 android:layout_width="fill_parent" android:layout_height="wrap_content"
+                 android:layout_marginRight="16dp"
+                 style="@android:style/Widget.ProgressBar.Horizontal"
+                 android:max="100" android:progress="63"
+                 android:background="@color/white"
+                 android:progressDrawable="@drawable/light_seekbar"
+                 android:thumb="@drawable/light_bright_progress_selector"
+                 android:minHeight="3dp"
+                 android:maxHeight="3dp"
+                 android:thumbOffset="0dp"/>
+    </LinearLayout>
+</RelativeLayout>

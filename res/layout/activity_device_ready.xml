@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content"
+               android:background="@drawable/kaifaban"/>
+    <TextView style="@style/login_text_style"
+              android:text="@string/device_ready_hint"
+              android:layout_marginTop="30dp"
+              android:gravity="center_horizontal"/>
+    <Button android:id="@+id/device_ready_next"
+            style="@style/login_btn_style"
+            android:text="@string/next"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="30dp"/>
+</LinearLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MuRata</string>
+    <string name="owner">owner</string>
+    <string name="not_owner">you are no owner</string>
+    <string name="member">Ordinary member</string>
+    <string name="on">on</string>
+    <string name="off">off</string>
+    <string name="open">open success</string>
+    <string name="close">close success</string>
+    <string name="retry">please try again!</string>
+    <string name="device">device</string>
+    <string name="next">next</string>
+    <string name="sure">sure</string>
+    <string name="reset">reset</string>
+    <string name="internet_error">internet error</string>
+    <string name="finish">finish</string>
+    <string name="unbind">unbind</string>
+    <string name="unbind_confirm">are you sure?</string>
+    <string name="unbind_success">unbind success</string>
+    <string name="no">no</string>
+    <string name="yes">yes</string>
+    <string name="no_login">you have not login,please login first</string>
+    <string name="timeout">timeout</string>
+    <string name="refresh">refresh</string>
+
+    <!-- MainActivity-->
+    <string name="main_title">MyBoard</string>
+    <string name="buffer">buffer</string>
+    <string name="light1">LED light1</string>
+    <string name="light2">LED light2</string>
+    <string name="led">three color lamp</string>
+    <string name="moto">motor</string>
+    <string name="open_error">device open failed,please change your device</string>
+    <string name="close_error">device close failed,please change your device</string>
+    <string name="set_nick_name">set nickName</string>
+
+    <!-- AddDeviceActivity-->
+    <string name="add_device_title">set Wi-Fi</string>
+    <string name="add_device_ssid_hint">connect Wi-Fi</string>
+    <string name="add_device_pwd_hint">input Wi-Fi password</string>
+    <string name="add_device_active">activating the device, please later。。。</string>
+    <string name="add_device_active_success">the equipment successfully activated</string>
+    <string name="add_device_active_retry">reactivating the device</string>
+    <string name="add_device_bind">binding equipment</string>
+    <string name="add_device_bind_success">binding success</string>
+    <string name="add_device_add_success">added equipment successfully</string>
+
+    <!-- DeviceReadyActivity-->
+    <string name="device_ready_title">add new equipment</string>
+    <string name="device_ready_hint">Press the development board SW6 then press SW7 within 5S, and then click Next</string>
+
+    <!-- ResetWifiActivity-->
+    <string name="reset_wifi_title">reset WiFi</string>
+    <string name="reset_wifi_active">is to reset Wifi, please later。。。</string>
+    <string name="reset_wifi_active_hint">reset the device WiFi</string>
+    <string name="reset_wifi_success">reset the device WiFi success</string>
+
+    <!-- LightActivity-->
+    <string name="light_title">three color lamp</string>
+    <string name="light_bright">brightness</string>
+
+    <!-- MotoActivity-->
+    <string name="moto_title">motor</string>
+    <string name="moto_speed">speed</string>
+
+    <!-- LoginActivity-->
+    <string name="login_title">login</string>
+    <string name="login_phone">your phone or email</string>
+    <string name="login_pwd">6-30 login password</string>
+    <string name="login_register">new user registration</string>
+    <string name="login_reset">forget password</string>
+    <string name="login_success">login success</string>
+    <string name="login_phone_empty">phone or email can not be empty</string>
+    <string name="login_phone_hint">the phone or email you enter is not exist</string>
+    <string name="login_pwd_empty">password can not be empty</string>
+
+    <!-- PasswordActivity-->
+    <string name="password_title">set password</string>
+    <string name="password_name">set name</string>
+    <string name="password_name_hint">name is no allowed empty</string>
+    <string name="password_pwd">please set 6-30 login password</string>
+    <string name="password_pwd_hint">please enter the correct password</string>
+    <string name="password_repwd">enter password again</string>
+    <string name="password_repwd_hint">repeat password does not match</string>
+    <string name="password_register_success">register success</string>
+    <string name="password_reset_success">reset password success</string>
+
+    <!-- ChangePwdActivity-->
+    <string name="change_pwd_title">change password</string>
+    <string name="change_pwd_old">old password</string>
+    <string name="change_pwd_old_hint">old password is empty</string>
+    <string name="change_pwd_old_hint2">old password is wrong</string>
+    <string name="change_pwd_new">new password</string>
+    <string name="change_pwd_new_hint">new password is empty</string>
+    <string name="change_pwd_sure">enter password again</string>
+    <string name="change_pwd_sure_hint">repeat password does not match</string>
+    <string name="change_pwd_success">change password success</string>
+
+    <!-- PhoneActivity-->
+    <string name="phone_title">new user registration</string>
+    <string name="phone_text">please enter your registered mobile phone number or email</string>
+    <string name="phone_exist">phone or email already register</string>
+    <string name="phone_no_exist">phone or email no existed</string>
+    <string name="phone_text_error_hint">phone or email invalid</string>
+    <string name="phone_text_hint">we will send you a verification code via SMS or Email</string>
+
+    <!-- VCodeActivity-->
+    <string name="vcode_title">send verification code</string>
+    <string name="vcode_text">please check the message, and enter the 6 digit verification code</string>
+    <string name="vcode_error">verification code you entered is incorrect</string>
+    <string name="vcode_sms_resend">resend verification code</string>
+    <string name="vcode_resend">resend verification code</string>
+
+    <!-- AboutActivity-->
+    <string name="about_title">about us</string>
+    <string name="about_copyright">ABLECLOUD COMPANY COPYRIGHT</string>
+    <string name="about_detail">Cloud intelligent engine, fast implementation of large-scale intelligent
+        equipment\nProvide a large data analysis engine, easy realization of intelligent hardware business
+        intelligence\nProvide secure networking engine, quickly build a top security networking hardware\n\n\n
+    </string>
+    <string name="about_general">Open Cloud intelligent hardware</string>
+
+    <!-- AuthorizedMemberActivity-->
+    <string name="authorized_member_title">member</string>
+    <string name="authorized_member_add">please enter the mobile phone number of members</string>
+    <string name="authorized_member_authorized_text">authorized member</string>
+    <string name="authorized_member_unbind_hint">unbound, other members will also share has lost control of the equipment</string>
+
+    <!-- DeviceManagerActivity-->
+    <string name="device_manager_title">device manager</string>
+
+    <!-- MyDeviceActivity-->
+    <string name="my_device_title">my Device</string>
+    <string name="my_device_share_member">share member</string>
+    <string name="my_device_share">share device</string>
+    <string name="my_device_choose">choose</string>
+
+    <!-- PersonalActivity-->
+    <string name="personal_title">personal information</string>
+    <string name="personal_change_nickname">change nickname</string>
+    <string name="personal_set_nickname">please enter your nickname</string>
+    <string name="personal_set_nickname_hint">nickname cannot be empty</string>
+    <string name="personal_change_nickname_success">change nickname success</string>
+    <string name="personal_change_pwd">change password</string>
+    <string name="personal_logout">logout</string>
+
+    <!-- ShareActivity-->
+    <string name="share_title">share device</string>
+    <string name="share_hint">app can be used to scan the two-dimensional code gain control device\nthe two-dimensional code 5 minutes</string>
+
+    <!-- SlideMenu-->
+    <string name="menu_device_manager">Device Manager</string>
+    <string name="menu_update">Check Update</string>
+    <string name="menu_update_already">already the latest version</string>
+    <string name="menu_update_no_net">no WiFi connection, only update in WiFi</string>
+    <string name="menu_about_us">About Us</string>
+
+    <!-- Pop-->
+    <string name="bind_device_first">please bind equipment</string>
+    <string name="share_with_owner_only">only the administrator can share equipment</string>
+    <string name="add_device">Add Device</string>
+    <string name="add_device_with_sharecode">Add Share Device</string>
+    <string name="share_device">Share Device</string>
+    <string name="reset_wifi">Reset WiFi</string>
+    <string name="delete_device">Delete Device</string>
+    <string name="logout">Logout</string>
+
+    <!-- 二维码扫描 BEGIN -->
+    <string name="barcode_laser_tip">the two-dimensional code into the box, you can automatically add</string>
+    <string name="msg_camera_framework_bug">Sorry, the Android camera encountered a problem. You may need to restart the
+        device.
+    </string>
+</resources>

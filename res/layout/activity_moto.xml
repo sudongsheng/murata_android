@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+               android:layout_marginTop="52dp" android:layout_gravity="center_horizontal"
+               android:src="@drawable/icon_moto"/>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+                  android:layout_marginTop="62dp" android:orientation="horizontal">
+        <TextView android:layout_width="64dp" android:layout_height="wrap_content"
+                  android:text="@string/moto_speed" android:textColor="@color/phone_text"
+                  android:textSize="16sp" android:gravity="center_horizontal" android:layout_gravity="center_vertical"/>
+        <SeekBar android:id="@+id/moto_seekbar"
+                 android:layout_width="fill_parent" android:layout_height="wrap_content"
+                 android:layout_marginRight="16dp"
+                 style="@android:style/Widget.ProgressBar.Horizontal"
+                 android:max="100" android:progress="63"
+                 android:background="@color/white"
+                 android:progressDrawable="@drawable/light_seekbar"
+                 android:thumb="@drawable/light_bright_progress_selector"
+                 android:minHeight="3dp"
+                 android:maxHeight="3dp"
+                 android:thumbOffset="0dp"/>
+    </LinearLayout>
+
+    <ToggleButton
+            android:id="@+id/moto_toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52dp"
+            android:background="@drawable/selectors_moto_toggle"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:textOff=""
+            android:textOn=""
+            android:layout_alignParentRight="true"/>
+</LinearLayout>
